@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }))
 
-require('./authentication').init(app)
+require('./authentication').init()
 
 app.use(session({
   store: new RedisStore({

@@ -6,12 +6,12 @@ const authenticationMiddleware = require('./middleware')
 
 // Generate Password
 const saltRounds = 10
-const myPlaintextPassword = 'my-password'
+const myPlaintextPassword = 'mp'
 const salt = bcrypt.genSaltSync(saltRounds)
 const passwordHash = bcrypt.hashSync(myPlaintextPassword, salt)
 
 const user = {
-  username: 'test-user',
+  username: 'tu',
   passwordHash,
   id: 1
 }
